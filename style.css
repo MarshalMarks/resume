@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Geologica:wght@100..900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#bodyContainer {
+    padding-left: max(30vw - 14rem, 20px);
+    padding-right: max(30vw - 14rem, 20px);
+    font-family: "Geologica", sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Averia Serif Libre", serif;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+#titleSection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#titleSection * {
+    flex-grow: 1;
+}
+
+#titleTopDiv {
+    flex-grow: 2;
+}
+
+#titleBottomDiv {
+    flex-grow: 0;
+}
+
+#aboutSection {
+    margin-bottom: 17rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-column-gap: 6vw;
+    word-wrap: break-word;
+}
+
+#aboutSection h2 {
+    margin-top: 0;
+}
+
+#aboutSection img {
+    min-width: 18rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0px 2px 5px gray;
+}
+
+#biography {
+    text-align: justify;
+    font-size: max(0.4vw + 0.8rem, 1rem);
+    margin-bottom: 2.5rem;
+}
+
+#personalInfo {
+    min-width: 10rem;
+    font-size: 1rem;
+}
+
+#personalInfo p {
+    margin-bottom: 0rem;
+}
+
+@media (max-width: 55rem) {
+    #aboutSection {
+        grid-template-columns: 1fr;
+        margin-bottom: 6rem;
+    }
+}
+
+.listSection {
+    margin-bottom: 6rem;
+    font-size: 1.2rem;
+}
+
+.listSection h1 {
+    border-bottom: 2px black solid;
+    padding-bottom: 0.5rem;
+}
+  
+.listSection div {
+    background-color: white;
+}
+
+.listItemGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+}
+
+.listItemTitle {
+    text-align: right;
+    border-right: 1px gray solid;
+    padding-right: 3rem;
+}
+
+.listItemBody {
+    padding-left: 3rem;
+}
+
+.listItemBody p {
+    text-align: justify;
+}
+
+@media (max-width: 50rem) {
+    .listItemTitle {
+        text-align: left;
+        border-right: none;
+        border-bottom: 1px gray solid;
+    }
+    .listItemBody {
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+    .listItemGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#footer {
+    padding: max(30vw - 14rem, 20px);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: black;
+    text-align: right;
+    background-color: #f0f0f0;
+    box-shadow: inset 0px 10px 10px -10px gray;
+}
