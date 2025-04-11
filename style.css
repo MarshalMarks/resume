@@ -3,6 +3,7 @@
 html {
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
 body {
@@ -12,9 +13,9 @@ body {
     font-weight: 200;
 }
 
-#bodyContainer {
-    padding-left: max(24vw - 11rem, 20px);
-    padding-right: max(24vw - 11rem, 20px);
+#infoContainer {
+    background-color: white;
+    box-shadow: 0px 0px 15px #c0c0c0;
 }
 
 h1 {
@@ -50,7 +51,6 @@ a {
 }
 
 #aboutSection {
-    margin-bottom: 17rem;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-column-gap: 6vw;
@@ -63,14 +63,12 @@ a {
 
 #aboutSection img {
     min-width: 18rem;
-    margin-bottom: 2.5rem;
     box-shadow: 0px 2px 5px gray;
 }
 
 #biography {
     text-align: justify;
     font-size: max(0.8vw + 0.6rem, 1rem);
-    margin-bottom: 2.5rem;
 }
 
 #personalInfo {
@@ -82,15 +80,7 @@ a {
     margin-bottom: 0rem;
 }
 
-@media (max-width: 55rem) {
-    #aboutSection {
-        grid-template-columns: 1fr;
-        margin-bottom: 6rem;
-    }
-}
-
 .listSection {
-    margin-bottom: 6rem;
     font-size: 1.2rem;
 }
 
@@ -105,7 +95,7 @@ a {
 
 .listItemGrid {
     display: grid;
-    grid-template-columns: 1fr 1.8fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 .listItemTitle {
@@ -116,6 +106,10 @@ a {
 
 .listItemBody {
     padding-left: 3rem;
+}
+
+.listItemBody h3 {
+    font-weight: normal;
 }
 
 .listItemBody p {
@@ -131,17 +125,48 @@ a {
     .listItemBody {
         padding-left: 0;
         margin-bottom: 1rem;
+        margin-top: 1.2rem;
     }
     .listItemGrid {
         grid-template-columns: 1fr;
     }
+    .listItemGrid h3 {
+        margin-top: 0;
+    }
+    .listItemTitle h3 {
+        margin-bottom: .5rem;
+    }
+    .listItemGrid h5 {
+        margin-top: 0;
+        margin-bottom: .7rem;
+    }
+    #biography {
+        margin-top: 2rem;
+    }
+    #personalInfo {
+        margin-top: 1rem;
+    }
+    #aboutSection {
+        grid-template-columns: 1fr;
+        margin-bottom: 1.6rem;
+    }
 }
 
 #footer {
-    padding-right: max(24vw - 11rem, 20px);
     padding-bottom: 1rem;
     padding-top: 1rem;
     text-align: right;
-    background-color: #f0f0f0;
-    box-shadow: inset 0px 10px 10px -10px gray;
+}
+
+.sidePadding {
+    padding-right: max(24vw - 11rem, 20px);
+    padding-left: max(24vw - 11rem, 20px);
+}
+
+.topPadding {
+    padding-top: max(14vw - 5rem, 20px);
+}
+
+.bottomPadding {
+    padding-bottom: max(14vw - 5rem, 20px);
 }
