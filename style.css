@@ -63,12 +63,11 @@ a {
 
 #aboutSection img {
     min-width: 18rem;
-    box-shadow: 0px 2px 5px gray;
 }
 
 #biography {
     text-align: justify;
-    font-size: max(0.8vw + 0.6rem, 1rem);
+    font-size: max(0.7vw + 0.64rem, 1rem);
 }
 
 #personalInfo {
