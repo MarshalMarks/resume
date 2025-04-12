@@ -32,6 +32,10 @@ a {
     color: black;
 }
 
+ul {
+    padding-left: 1.2rem;
+}
+
 #titleSection {
     min-height: 100vh;
     display: flex;
