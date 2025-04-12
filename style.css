@@ -141,9 +141,11 @@ a {
     }
     #biography {
         margin-top: 2rem;
+        font-size: 1.2rem;
     }
     #personalInfo {
         margin-top: 1rem;
+        font-size: 1.2rem;
     }
     #aboutSection {
         grid-template-columns: 1fr;
