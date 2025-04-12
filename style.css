@@ -32,6 +32,10 @@ a {
     color: black;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 ul {
     padding-left: 1.2rem;
 }
@@ -42,8 +46,8 @@ ul {
     flex-direction: column;
 }
 
-#titleSection * {
-    flex-grow: 1;
+#titleSection h1 {
+    height: fit-content;
 }
 
 #titleTopDiv {
@@ -51,7 +55,7 @@ ul {
 }
 
 #titleBottomDiv {
-    flex-grow: 0;
+    flex-grow: 1;
 }
 
 #aboutSection {
