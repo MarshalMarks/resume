@@ -94,6 +94,7 @@ ul {
 .listSection h1 {
     border-bottom: 2px black solid;
     padding-bottom: 0.5rem;
+    margin-top: 0;
 }
   
 .listSection div {
@@ -124,6 +125,9 @@ ul {
 }
 
 @media (max-width: 50rem) {
+    .listSection h1 {
+        margin-top: 1rem;
+    }
     .listItemTitle {
         text-align: left;
         border-right: none;
@@ -173,9 +177,9 @@ ul {
 }
 
 .topPadding {
-    padding-top: max(14vw - 5rem, 20px);
+    padding-top: max(16vw - 5rem, 20px);
 }
 
 .bottomPadding {
-    padding-bottom: max(14vw - 5rem, 20px);
+    padding-bottom: max(16vw - 5rem, 20px);
 }
