@@ -4,6 +4,9 @@ html {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    background-image: url("resources/background.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 body {
@@ -14,8 +17,10 @@ body {
 }
 
 #infoContainer {
-    background-color: white;
-    box-shadow: 0px 0px 15px #c0c0c0;
+    backdrop-filter: blur(1.5rem);
+    box-shadow: 0px 0px 2rem #f1ebeb;
+    border-top: 3px solid white;
+    border-bottom: 2px solid white;
 }
 
 h1 {
@@ -71,6 +76,9 @@ ul {
 
 #aboutSection img {
     min-width: 18rem;
+    border-radius: 1rem;
+    border: 3px solid #fdfdfd;
+    box-shadow: 0px 0px 1.5rem #f0f0f0;
 }
 
 #biography {
@@ -95,10 +103,6 @@ ul {
     border-bottom: 2px black solid;
     padding-bottom: 0.5rem;
     margin-top: 0;
-}
-  
-.listSection div {
-    background-color: white;
 }
 
 .listItemGrid {
