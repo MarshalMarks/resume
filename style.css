@@ -124,6 +124,16 @@ ul {
     text-align: justify;
 }
 
+.skillsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 6vw;
+}
+
+.skillsGrid h3 {
+    margin-top: 0;
+}
+
 @media (max-width: 50rem) {
     .listSection h1 {
         margin-top: 1rem;
@@ -162,6 +172,10 @@ ul {
     #aboutSection {
         grid-template-columns: 1fr;
         margin-bottom: 1.6rem;
+    }
+    .skillsGrid {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
