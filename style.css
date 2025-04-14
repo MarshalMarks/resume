@@ -38,6 +38,7 @@ body {
 }
 
 #infoContainer {
+    background-color: #ffffff60;
     backdrop-filter: blur(1.8rem);
     box-shadow: 0px 0px 2rem var(--colorShadow);
     border-top: 3px solid var(--colorBorder);
