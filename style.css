@@ -38,7 +38,7 @@ body {
 }
 
 #infoContainer {
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(1.8rem);
     box-shadow: 0px 0px 2rem var(--colorShadow);
     border-top: 3px solid var(--colorBorder);
     border-bottom: 3px solid var(--colorBorder);
@@ -110,6 +110,7 @@ ul {
     border-radius: 2rem;
     border: 3px solid var(--colorImageBorder);
     box-shadow: 0px 0px 1.5rem var(--colorBackground);
+    background-color: var(--colorImageBorder);
 }
 
 @media (prefers-color-scheme: dark) {
