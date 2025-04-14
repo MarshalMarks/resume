@@ -1,12 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Geologica:wght@100..900&display=swap');
 
+:root {
+    --colorPrimary: #000; 
+    --colorBackground: #f0f0f0;
+    --colorBorder: #fff;
+    --colorImageBorder: #fdfdfd;
+    --colorShadow: #f1ebeb;
+    --backgroundImage: url(resources/background.jpg);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --colorPrimary: #fff; 
+        --colorBackground: #0f0f0f;
+        --colorBorder: #c0c0c0;
+        --colorImageBorder: #c0c0c0;
+        --colorShadow: #000;
+        --backgroundImage: url(resources/background_dark.jpg);
+    }
+}
+
 html {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    background-image: url("resources/background.jpg");
+    background-color: var(--colorBackground);
+    background-image: var(--backgroundImage);
     background-repeat: repeat;
     background-attachment: fixed;
+    color: var(--colorPrimary);
 }
 
 body {
@@ -18,9 +39,19 @@ body {
 
 #infoContainer {
     backdrop-filter: blur(1.5rem);
-    box-shadow: 0px 0px 2rem #f1ebeb;
-    border-top: 3px solid white;
-    border-bottom: 2px solid white;
+    box-shadow: 0px 0px 2rem var(--colorShadow);
+    border-top: 3px solid var(--colorBorder);
+    border-bottom: 3px solid var(--colorBorder);
+    border-radius: 3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    #infoContainer {
+        background-color: #30303060;
+        box-shadow: 0px 0px 2rem var(--colorShadow);
+        border-top: 2px solid var(--colorBorder);
+        border-bottom: 2px solid var(--colorBorder);
+    }
 }
 
 h1 {
@@ -34,7 +65,7 @@ h1,h2,h3,h4,h5,h6 {
 a {
     margin: 0;
     padding: 0;
-    color: black;
+    color: var(--colorPrimary);
 }
 
 a:hover {
@@ -76,9 +107,15 @@ ul {
 
 #aboutSection img {
     min-width: 18rem;
-    border-radius: 1rem;
-    border: 3px solid #fdfdfd;
-    box-shadow: 0px 0px 1.5rem #f0f0f0;
+    border-radius: 2rem;
+    border: 3px solid var(--colorImageBorder);
+    box-shadow: 0px 0px 1.5rem var(--colorBackground);
+}
+
+@media (prefers-color-scheme: dark) {
+    #aboutSection img {
+        border: 2px solid var(--colorImageBorder);
+    }
 }
 
 #biography {
@@ -100,7 +137,7 @@ ul {
 }
 
 .listSection h1 {
-    border-bottom: 2px black solid;
+    border-bottom: 2px solid var(--colorPrimary);
     padding-bottom: 0.5rem;
     margin-top: 0;
 }
@@ -112,7 +149,7 @@ ul {
 
 .listItemTitle {
     text-align: right;
-    border-right: 1px gray solid;
+    border-right: 1px solid var(--colorPrimary);
     padding-right: 3rem;
 }
 
@@ -145,7 +182,7 @@ ul {
     .listItemTitle {
         text-align: left;
         border-right: none;
-        border-bottom: 1px gray solid;
+        border-bottom: 1px solid var(--colorPrimary);
     }
     .listItemBody {
         padding-left: 0;
