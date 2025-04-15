@@ -273,6 +273,11 @@ ul {
     padding-left: max(24vw - 11rem, 20px);
 }
 
+
+#footer a {
+    text-decoration: none;
+}
+
 .topPadding {
     padding-top: max(16vw - 5rem, 20px);
 }
