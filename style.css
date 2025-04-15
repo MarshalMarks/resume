@@ -182,7 +182,7 @@ ul {
     border-radius: 2rem;
     border: 2px solid var(--colorBackgroundHover);
     background-color: var(--colorBackgroundUnhover);
-    backdrop-filter: blur(0.8rem);
+    backdrop-filter: blur(1.2rem);
     color: var(--colorPrimary);
     transition-duration: 200ms;
     margin-top: 0.4rem;
