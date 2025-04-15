@@ -33,17 +33,6 @@ open index.html
 - Modify the content in the HTML file to update your personal information.
 - Adjust the styles in styles.css to customize the look and feel of your resume.
 
-## File Structure
-
-/resume  
-│  
-├── index.html        # The main HTML file  
-├── style.css         # The stylesheet for the website  
-└── resources/        # Folder for any images  
- ├── profile.jpg            # Headshot or profile image  
- ├── background.jpg         # Headshot or profile image  
- └── background_dark.jpg    # Headshot or profile image  
-
 ## Customization
 
 - Personal Information: Update sections like your name, contact details, skills, projects, and experience in the index.html file.
