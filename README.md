@@ -15,7 +15,7 @@ To use or modify this website:
 1. Clone the Repository
 
 ```
-git clone https://github.com/yourusername/resume-website.git
+git clone https://github.com/MarshalMarks/resume.git
 ```
 
 2. Open the Website
@@ -35,14 +35,14 @@ open index.html
 
 ## File Structure
 
-/resume
-│
-├── index.html        # The main HTML file
-├── style.css         # The stylesheet for the website
-└── resources/        # Folder for any images
- ├── profile.jpg            # Headshot or profile image
- ├── background.jpg         # Headshot or profile image
- └── background_dark.jpg    # Headshot or profile image
+/resume  
+│  
+├── index.html        # The main HTML file  
+├── style.css         # The stylesheet for the website  
+└── resources/        # Folder for any images  
+ ├── profile.jpg            # Headshot or profile image  
+ ├── background.jpg         # Headshot or profile image  
+ └── background_dark.jpg    # Headshot or profile image  
 
 ## Customization
 
