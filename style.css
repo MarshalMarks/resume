@@ -141,7 +141,7 @@ ul {
 
 #aboutSection {
     display: grid;
-    grid-template-columns: 1fr 2fr 1.5fr;
+    grid-template-columns: 1fr 2fr 2fr;
     grid-column-gap: 6vw;
     word-wrap: break-word;
 }
@@ -166,7 +166,7 @@ ul {
 
 #biography {
     text-align: justify;
-    font-size: max(0.6vw + 0.68rem, 1rem);
+    font-size: max(0.5vw + 0.68rem, 1rem);
 }
 
 #personalInfo {
