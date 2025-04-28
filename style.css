@@ -6,6 +6,8 @@
     --colorBackgroundUnhover: #c7c7c760;
     --colorBackgroundHover: #ffffff;
     --colorBorder: #fff;
+    --colorButtonBorder: #c7c7c700;
+    --colorButtonBackground: #c7c7c760;
     --colorImageBorder: #fdfdfd;
     --colorShadow: #24222240;
     --backgroundImage: url(resources/background.jpg);
@@ -18,6 +20,8 @@
         --colorBackgroundUnhover: #38383870;
         --colorBackgroundHover: #555555;
         --colorBorder: #c0c0c0;
+        --colorButtonBorder: #c0c0c0;
+        --colorButtonBackground: #38383870;
         --colorImageBorder: #c0c0c0;
         --colorShadow: #000;
         --backgroundImage: url(resources/background_dark.jpg);
@@ -47,7 +51,7 @@ body {
     box-shadow: 0px 0px 1rem var(--colorShadow);
     border-top: 3px solid var(--colorBorder);
     border-bottom: 3px solid var(--colorBorder);
-    border-radius: 3rem;
+    border-radius: 2rem;
 }
 
 #navBar {
@@ -59,8 +63,8 @@ body {
     background-color: #f0f0f0a0;
     backdrop-filter: blur(2.8rem);
     border-bottom: 2px solid var(--colorBorder);
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
     z-index: 6;
 }
 
@@ -162,7 +166,7 @@ ul {
 
 #aboutSection img {
     min-width: 18rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     border: 3px solid var(--colorImageBorder);
     box-shadow: 0px 0px 1.5rem var(--colorBackground);
     background-color: var(--colorImageBorder);
@@ -223,27 +227,29 @@ ul {
 
 .projectButton {
     width: 100%;
-    height: 4rem;
+    height: 3rem;
 }
 
 .projectButton button {
-    width: 12rem;
-    height: 4rem;
-    border-radius: 2rem;
-    border: 2px solid var(--colorBackgroundHover);
-    background-color: var(--colorBackgroundUnhover);
+    width: 13rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 2px solid var(--colorButtonBorder);
+    background-color: var(--colorButtonBackground);
     backdrop-filter: blur(1.2rem);
     color: var(--colorPrimary);
     transition-duration: 200ms;
     margin-top: 0.4rem;
     margin-bottom: 1.5rem;
-    padding-bottom: 3.8rem;
+    padding-bottom: 2.9rem;
 }
 
 .projectButton p {
     width: 100%;
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
 }
 
 .projectButton button:hover {
