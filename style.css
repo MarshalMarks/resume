@@ -68,7 +68,15 @@ body {
     justify-content: space-between;
 }
 
-#navBarContent a {
+#navBarContent h2 {
+    user-select: none;
+}
+
+#navBarContent h2 a {
+    text-decoration: none;
+}
+
+#navBarLinks a {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
     padding-left: 1rem;
@@ -81,7 +89,7 @@ body {
     border-radius: 1rem;
 }
 
-#navBarContent a:hover {
+#navBarLinks a:hover {
     background-color: var(--colorBackgroundUnhover);
 }
 
