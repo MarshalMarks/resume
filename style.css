@@ -3,12 +3,12 @@
 :root {
     --colorPrimary: #000; 
     --colorBackground: #f0f0f0;
-    --colorBackgroundUnhover: #c7c7c760;
-    --colorBackgroundHover: #ffffff;
-    --colorBorder: #fff;
-    --colorButtonBorder: #c7c7c700;
-    --colorButtonBackground: #c7c7c760;
-    --colorImageBorder: #fdfdfd;
+    --colorBackgroundUnhover: #c7c7c791;
+    --colorBackgroundHover: #c7c7c791;
+    --colorBorder: #000;
+    --colorButtonBorder: #000;
+    --colorButtonBackground: #ffffffd0;
+    --colorImageBorder: #000;
     --colorShadow: #24222230;
     --backgroundImage: url(resources/background.jpg);
 }
@@ -17,7 +17,7 @@
     :root {
         --colorPrimary: #fff; 
         --colorBackground: #0f0f0f;
-        --colorBackgroundUnhover: #38383870;
+        --colorBackgroundUnhover: #5e5e5e70;
         --colorBackgroundHover: #555555;
         --colorBorder: #c0c0c0;
         --colorButtonBorder: #c0c0c0;
@@ -49,9 +49,8 @@ body {
     background-color: #f0f0f020;
     backdrop-filter: blur(1.8rem);
     box-shadow: 0px 0px 1rem var(--colorShadow);
-    border-top: 3px solid var(--colorBorder);
-    border-bottom: 3px solid var(--colorBorder);
-    border-radius: 1rem;
+    border-top: 2px solid var(--colorBorder);
+    border-bottom: 2px solid var(--colorBorder);
 }
 
 #navBar {
@@ -60,8 +59,8 @@ body {
     left: 0;
     width: 100%;
     box-shadow: 0px 0px 1rem var(--colorShadow);
-    background-color: #f0f0f0f0;
-    backdrop-filter: blur(2.8rem);
+    background-color: #ffffffc0;
+    backdrop-filter: blur(2rem);
     border-bottom: 2px solid var(--colorBorder);
     z-index: 6;
 }
@@ -87,7 +86,6 @@ body {
     line-height: 2rem;
     display: inline-block;
     vertical-align: middle;
-    border-radius: 0.5rem;
 }
 
 #navBarLinks a:hover {
@@ -156,11 +154,10 @@ ul {
 }
 
 #aboutSection img {
-    min-width: 18rem;
+    min-width: 16rem;
     border: 3px solid var(--colorImageBorder);
     box-shadow: 0px 0px 1.5rem var(--colorBackground);
     background-color: var(--colorImageBorder);
-    border-radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -224,7 +221,6 @@ ul {
 .projectButton button {
     width: 100%;
     height: 3rem;
-    border-radius: 0.5rem;
     border: 2px solid var(--colorButtonBorder);
     background-color: var(--colorButtonBackground);
     backdrop-filter: blur(1.2rem);
@@ -235,6 +231,12 @@ ul {
     padding-bottom: 2.9rem;
 }
 
+.projectButton button:hover {
+    cursor: pointer;
+    background-color: var(--colorBackgroundHover);
+    transition-duration: 120ms;
+}
+
 .projectButton p {
     width: 100%;
     font-size: 1.2rem;
@@ -242,14 +244,6 @@ ul {
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
     font-family:'Century Gothic',futura,'URW Gothic L',Verdana,sans-serif;
-}
-
-.projectButton button:hover {
-    cursor: pointer;
-    border: 2px solid var(--colorBorder);
-    background-color: var(--colorBackgroundHover);
-    box-shadow: 0rem 0rem 0.8rem var(--colorShadow);
-    transition-duration: 120ms;
 }
 
 .skillsGrid {
