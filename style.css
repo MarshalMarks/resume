@@ -47,7 +47,7 @@ body {
 
 #infoContainer {
     background-color: #f0f0f020;
-    backdrop-filter: blur(1.8rem);
+    backdrop-filter: blur(0.8rem);
     box-shadow: 0px 0px 1rem var(--colorShadow);
     border-top: 2px solid var(--colorBorder);
     border-bottom: 2px solid var(--colorBorder);
@@ -60,7 +60,7 @@ body {
     width: 100%;
     box-shadow: 0px 0px 1rem var(--colorShadow);
     background-color: #ffffffc0;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(0.8rem);
     border-bottom: 2px solid var(--colorBorder);
     z-index: 6;
 }
@@ -96,13 +96,10 @@ body {
     #infoContainer {
         background-color: #101010a0;
         box-shadow: 0px 0px 2rem var(--colorShadow);
-        border-top: 2px solid var(--colorBorder);
-        border-bottom: 2px solid var(--colorBorder);
     }
     #navBar {
-        background-color: #101010e0;
+        background-color: #101010a0;
         box-shadow: 0px 0px 2rem var(--colorShadow);
-        border-bottom: 2px solid var(--colorBorder);
     }
 }
 
