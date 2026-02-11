@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     // Check scroll position and add/remove class
     function checkScrollPosition() {
-        console.log(window.scrollY)
         if(window.scrollY === 0) {
             // User is at the top of the page
             if(!header.classList.contains(className)) {
